@@ -10,4 +10,4 @@ player2 = Player.new('Player 2')
 game = GameLoop.new(player1, player2)
 
 # Start the game
-game.start
+game.start_game
