@@ -25,16 +25,11 @@ Player 1 wins with a score of 1/3
 ----- GAME OVER -----
 Good bye!
 ```
-
-## Tasks
-
-### Task 1: Extract Nouns for Classes
-
-
 #### Player
 
 - initialize
   - lives = 3
+  - name
 
 - methods
 	- `lose_life`
@@ -46,15 +41,10 @@ Good bye!
 #### Game loop
 
 - initialize
-	- player1
-	- player2
-	- current_player
+	- `player1`
+	- `player2`
+	- `current_player`
 - methods
-	- generate_question
-  	- `generate_answer = #{num1} + #{num2}`
-  	- `puts current_player.name + "What does #{num1} plus #{num2} equal?"`
-  	- `answer = gets.chomp`
-	- `change_current_player` (if current_player == player1, then current_player = player2, else current_player = player1)
+	- `generate_question`
+	- `change_current_player`
 	- `play_game`
-  	- check lives of each player
-  	- does the `----- NEW TURN -----` thing 
